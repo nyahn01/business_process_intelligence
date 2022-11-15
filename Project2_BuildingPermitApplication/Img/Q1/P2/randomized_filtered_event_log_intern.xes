@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  XES version 1849.2016 (IEEE 1849-2016)  -->
+<!--  Created by Fluxicon Disco (fluxicon.com/disco)  -->
+<!--  (c) 2021 by Fluxicon BV, Bomanshof 259, 5611 NS Eindhoven, The Netherlands  -->
+<log xes.version="1849.2016" xmlns="http://www.xes-standard.org" xes.creator="Fluxicon Disco">
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext"/>
+	<extension name="Lifecycle" prefix="lifecycle" uri="http://www.xes-standard.org/lifecycle.xesext"/>
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext"/>
+	<extension name="Organizational" prefix="org" uri="http://www.xes-standard.org/org.xesext"/>
+	<global scope="trace">
+		<string key="concept:name" value="name"/>
+		<string key="variant" value="string"/>
+		<int key="variant-index" value="0"/>
+		<string key="department" value="string"/>
+		<string key="responsible" value="string"/>
+		<string key="channel" value="string"/>
+	</global>
+	<global scope="event">
+		<string key="concept:name" value="name"/>
+		<string key="lifecycle:transition" value="transition"/>
+		<string key="org:resource" value="resource"/>
+		<date key="time:timestamp" value="2021-07-14T18:55:40.669+05:30"/>
+		<string key="concept:instance" value="string"/>
+		<string key="org:group" value="string"/>
+	</global>
+	<classifier name="Activity" keys="concept:name"/>
+	<classifier name="Resource" keys="org:resource"/>
+	<string key="lifecycle:model" value="standard"/>
+	<string key="creator" value="Fluxicon Disco"/>
+	<string key="library" value="Fluxicon Octane"/>
+	<trace>
+		<string key="concept:name" value="case_100813"/>
+		<string key="variant" value="Variant 1"/>
+		<int key="variant-index" value="1"/>
+		<string key="creator" value="Fluxicon Disco"/>
+		<string key="department" value="General"/>
+		<string key="responsible" value="Resource11"/>
+		<string key="channel" value="Intern"/>
+		<event>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="2011-01-26T14:35:01.299+05:30"/>
+			<string key="concept:instance" value="task-9574"/>
+			<string key="cost" value="&lt;1000"/>
+			<string key="org:group" value="EMPTY"/>
+			<string key="org:resource" value="Resource11"/>
+			<string key="concept:name" value="Confirmation of receipt"/>
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="2011-01-26T14:35:50.741+05:30"/>
+			<string key="concept:instance" value="task-9611"/>
+			<string key="org:group" value="Group 1"/>
+			<string key="org:resource" value="Resource11"/>
+			<string key="concept:name" value="T06 Determine necessity of stop advice"/>
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="2011-01-26T14:36:19.899+05:30"/>
+			<string key="concept:instance" value="task-9612"/>
+			<string key="org:group" value="Group 1"/>
+			<string key="org:resource" value="Resource11"/>
+			<string key="concept:name" value="T10 Determine necessity to stop indication"/>
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="2011-01-26T17:47:25.720+05:30"/>
+			<string key="concept:instance" value="task-9610"/>
+			<string key="org:group" value="EMPTY"/>
+			<string key="org:resource" value="Resource19"/>
+			<string key="concept:name" value="T02 Check confirmation of receipt"/>
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="2011-01-26T17:48:42.196+05:30"/>
+			<string key="concept:instance" value="task-9668"/>
+			<string key="org:group" value="Group 3"/>
+			<string key="org:resource" value="Resource19"/>
+			<string key="concept:name" value="T04 Determine confirmation of receipt"/>
+		</event>
+		<event>
+			<string key="lifecycle:transition" value="complete"/>
+			<date key="time:timestamp" value="2011-01-27T13:50:35.668+05:30"/>
+			<string key="concept:instance" value="task-9669"/>
+			<string key="org:group" value="Group 2"/>
+			<string key="org:resource" value="Resource07"/>
+			<string key="concept:name" value="T05 Print and send confirmation of receipt"/>
+		</event>
+	</trace>
+</log>
